@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coding Quiz</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-  <div class = "app">
-    <h1>Coding Quiz</h1>
-    <div class = "quiz">
-      <h2 id="question">Question goes here</h2>
-      <div id="answer-buttons">
-        <button class="btn"> Answer 1</button>
-        <button class="btn"> Answer 2</button>
-        <button class="btn"> Answer 3</button>
-        <button class="btn"> Answer 4</button>
-      </div>
-      <button id="next-btn">Next</button>
+  <header>
+    <p id="timer">Time: <span id="timer-value">60</span> seconds</p>
+  </header>
+  <main class="app">
+
+    <div id="introduction">
+      <h1>Coding Quiz</h1>
+      <p>
+        Welcome to the Coding Quiz! You have 60 seconds to answer code related questions. Incorrect answers will cause
+        you to lose time by 10 seconds! Ready?
+      </p>
+      <button id="start-btn">Start Quiz</button>
     </div>
 
+    <div class="quiz hide" id="quiz">
+      <h2 id="question">Question goes here</h2>
+      <div id="answer-buttons">
+   
+      </div>
 
-  </div>
-  <script src="assets/script.js"></script>
+    </div>
+    <div id="high-scores"></div>
+
+    <button id="reset-btn" class="btn hide" onclick="resetQuiz()">Reset Quiz</button>
+
+  </main>
+
+
+
+
+
+  <script src="./assets/script.js"></script>
 </body>
+
 </html>
